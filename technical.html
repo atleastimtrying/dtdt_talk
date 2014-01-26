@@ -15,6 +15,7 @@
         <li>released in iOS and google play stores</li>
       </ul>
     </section>
+    <!-- play a game of dtd -->
     <section>
       <h2>How was it made?</h2>
       <ul>
@@ -38,6 +39,7 @@
         <li>ideal for go it alone projects</li>
       </ul>
     </section>
+    <!-- phonegap website -->
     <section>
       <h2>Single Page App</h2>
       <ul>
@@ -59,6 +61,7 @@
         <li>on collision trigger the next state</li>
       </ul>
     </section>
+    <!-- code example of  collision detection -->
     <section>
       <h2>coffeescript</h2>
       <ul>
@@ -67,6 +70,33 @@
         <li>This structure has made it easier to add new functionality and improve bits without breaking the code</li>
         <li>An example of this is an experimental branch with multi touch instead of jquery ui draggable.</li>
       </ul>
+    </section>
+    <section>
+    <blockquote>
+      <pre>
+        class window.Collisions
+          constructor: (obj)->
+            $(obj).on 'has_collided', @has_collided
+          has_collided: (event, obj)=>
+            obj.fn @collison_test obj.item_1, obj.item_2
+          collision: (obj1, obj2)->
+            range = obj1.radius + obj2.radius
+            xdiff = obj1.x - obj2.x
+            ydiff = item1.y - item2.y
+            dist = Math.sqrt (ydiff * ydiff) + (xdiff * xdiff)
+            (dist < range)
+        $(obj).trigger 'has_collided',
+          fn: (result)-> console.log result 
+          obj1:
+            radius: 8
+            x: 10
+            y: 10
+          obj2:
+            radius: 8
+            x: 30
+            y: 30
+      </pre>
+    </blockquote>
     </section>
     <section>
       <h2>Event Driven</h2>
@@ -113,6 +143,7 @@
         <li>downloadable ipas/apks etc</li>
       </ul>
     </section>
+    <!-- phonegap build website -->
     <section>
       <h2>the cycle</h2>
       <ul>
@@ -138,6 +169,7 @@
         <li>test on ios device(as an app)</li>
       </ul>
     </section>
+    <!-- host local phonegap show ios -->
     <section>
       <h2>What next?</h2>
       <ul>
