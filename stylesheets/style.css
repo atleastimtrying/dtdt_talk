@@ -463,7 +463,10 @@ section {
   box-sizing:border-box;
   padding:36px;
 }
-
+section img{
+  display:block;
+  margin:0 auto;
+}
 h1{
   font-size: 56px;
 }
@@ -478,5 +481,6 @@ ul li{
   font-size:36px;
   margin-bottom:12px;
   list-style: none;
+  color:white;
 }
 
