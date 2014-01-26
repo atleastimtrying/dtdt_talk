@@ -1,0 +1,193 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Drag the Dots - A Talk</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src='javascripts/jquery.js'></script>
+    <script src="javascripts/app.js"></script>
+  </head>
+  <body>
+    <section class='active'>
+      <h2>Drag the Dots - A Talk</h2>
+      <img src='#'>
+    </section>
+    <section>
+      <h1>What is Drag the Dots?</h1>
+      <ul>
+        <li>A simple mobile game</li>
+        <li>built with phonegap</li>
+        <li>released in iOS and google play stores</li>
+      </ul>
+    </section>
+    <section>
+      <h1>How was it made? (technical)</h1>
+      <ul>
+        <li>Phonegap</li>
+        <li>Single Page App</li>
+        <li>jQuery Draggable/trig</li>
+        <li>coffeescript</li>
+        <li>event driven</li>
+        <li>JSONP</li>
+        <li>local storage</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Phonegap</h2>
+      <ul>
+        <li>Phonegap is a native wrapper around html/css/js</li>
+        <li>Everything is in a webview with a few apis</li>
+        <li>Cross platform: iOS/Android/windows phone/blackberry etc</li>
+        <li>Easy to write if you knwo html css/js</li>
+        <li>lacks native ui/performance</li>
+        <li>ideal for go it alone projects</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Single Page App</h2>
+      <ul>
+        <li>All the markup is in one page</li>
+        <li>Use JS to show and hide divs as screens</li>
+        <li>JS variables are persisted due to lack of page reloads</li>
+        <li>consistent styling/state</li>
+      </ul>
+    </section>
+    <section>
+      <h2>jQuery Draggable/trig</h2>
+      <ul>
+        <li>Simple core game mechanic</li>
+        <li>stated off by just dragging divs around</li>
+        <li>assigned each div a target to 'hit'</li>
+        <li>simple maths using x/y/radius to determine if they collide</li>
+        <li>on collision trigger the next state</li>
+      </ul>
+    </section>
+    <section>
+      <h2>coffeescript</h2>
+      <ul>
+        <li>coffeescript is a language that compiles to javascript</li>
+        <li>Each piece of divisible functionality is seperated into a coffeescript class</li>
+        <li>This structure has made it easier to add new functionality and improve areas</li>
+        <li>An example of this is an experimental branch with multi touch instead of jquery ui draggable.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Event Driven</h2>
+      <ul>
+        <li>to keep concerns seperated alot of activity was bound to events</li>
+        <li>These events allowed layouts gameplay ui screens and timers to be seperate</li>
+        <li>events made it easy to hook in analytics and storage of interaction data</li>
+        <li>events made for easy debugging, findt he event that isnt firing there's your bug!</li>
+      </ul>
+    </section>
+    <section>
+      <h2>JSONP</h2>
+      <ul>
+        <li>All of the communication with the server makes use of JSONP</li>
+        <li>JSONP is a method by which you can aysnchronously communicate iwt ha server that is not your own.</li>
+        <li>becuase phonegap games are not served in a traditional sense there is no chance for CORS or similar</li>
+        <li>Ideally in time I will replace these jsonP calls with built in game services from apple/google.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>local storage</h2>
+      <ul>
+        <li>In order to persist data in phonegame you have ot use the localstorage api</li>
+        <li>it is a sim[ple key/value pairing via a few simple commands</li>
+        <li>The local high scores and preferences are stored in local storage</li>
+        <li>Local storage can theoretically be lost at any point so you can't rely upon it</li>
+      </ul>
+    </section>
+    <section>
+      <h1>release process</h1>
+      <ul>
+        <li>phonegap build</li>
+        <li>the cycle</li>
+        <li>testing</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>phonegap build</h2>
+      <ul>
+        <li>Service provided by phonegap</li>
+        <li>pulls and packages a github repo</li>
+        <li>you provide certificates/provisioning</li>
+        <li>downloadable ipas/apks etc</li>
+      </ul>
+    </section>
+    <section>
+      <h2>the cycle</h2>
+      <ul>
+        <li>write code</li>
+        <li>test code</li>
+        <li>push code</li>
+        <li>build code</li>
+        <li>test code</li>
+        <li>amend code</li>
+        <li>test code</li>
+        <li>release code</li>
+      </ul>
+    </section>
+    <section>
+      <h2>testing</h2>
+      <ul>
+        <li>host code locally on a server</li>
+        <li>Test in chrome first (as its webkit)</li>
+        <li>Test in iOS simulator</li>
+        <li>Test on android device in browser</li>
+        <li>phonegap build test</li>
+        <li>test on android device (as an app)</li>
+        <li>test on ios device(as an app)</li>
+      </ul>
+    </section>
+    <section>
+      <h1>What next?</h1>
+      <ul>
+        <li>more releases</li>
+        <li>multiplayer locally (ipad),</li>
+        <li>more levels, new ui.</li>
+        <li>hopefully other developers/designers.</li>
+        <li>better code formatting.</li>
+        <li>colour themes</li>
+        <li>sponsorship/partnering.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>more releases</h2>
+      <ul>
+        <li>getting back up to speed and a better pattern for releases is good</li>
+        <li>idelaly eveyr two weeks or so release new functionality</li>
+        <li>bundling releases too close is annoying for the user and exhausting for the developer</li>
+        <li>regular releases brings order.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>multiplayer locally (ipad),</h2>
+      <ul>
+        <li>I want to engage more with tablet users</li>
+        <li>local multiplayer is lacking these days</li>
+        <li>game could be pushed in new directions</li>
+      </ul>
+    </section>
+    <section>
+      <h2>better code formatting.</h2>
+      <ul>
+        <li>I think my code could be more modular and extensible</li>
+        <li>I'd like to take some drag the dots code onto new projects without it affecting gameplay (screens etc)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>colour themes</h2>
+      <ul>
+        <li>pretty colours!</li>
+        <li>my colourschemes are pretty arbitrary</li>
+        <li>contributed/branded colourschemes can help promote worthy projects</li>
+        <li>more choice for a user is often a good thing</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Questions?</h2>
+      <img src='images/gordon.jpg'>
+    </section>
+  </body>
+</html>
